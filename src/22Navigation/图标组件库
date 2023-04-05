@@ -1,0 +1,16 @@
+/**
+ * 图标组件库 
+ * 安装
+ *  npm install react-native-vector-icons -S 
+ *  将图标链接到环境问题比较多
+ *  https://github.com/oblador/react-native-vector-icons
+ * 使用
+ *  需要到具体的图标库官网查看
+ *  列如：Ionicons、FontAwessome、AntDesign
+ * Androd
+ * Edit android/app/build.gradle ( NOT android/build.gradle ) and add the following
+ * apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+ * ios具体看官网
+ * 
+ * 示例代码在BottomTab里
+ */

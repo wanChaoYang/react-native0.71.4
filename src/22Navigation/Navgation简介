@@ -1,0 +1,48 @@
+/**
+ * 路由组件
+ * RN的路由是通过React-Navigation来完成的
+ * 安装
+ *  yarn add @react-navigation/native  
+ * 必要的依赖
+ *  1.yarn add react-native-reanimated 滑动的动画 Drawer使用安装
+ *  2.yarn add react-native-gesture-handler 手势的处理 stack、Drawer使用安装
+ *  3.yarn add react-native-screens  目前版本安装 全部导航都需要安装
+ *  4.yarn add react-native-safe-area-contex 处理刘海屏，全部导航组件都需要安装
+ *  5.yarn add @react-native-community/masked-view stack使用里安装
+ * yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-contex @react-native-community/masked-view
+ * 
+ * 链接
+ * RN 0.60后安卓环境自动链接路由(Android无需任何操作)
+ * ios下需要手动链接路由(npx pod-install ios) 
+ * 
+ * 基础组件
+ * 添加头部组件
+ *  将如下代码放到应用的头部(列如：放到index.js或App.js问价的头部)
+ *  import "react-native-gesture-handler"
+ * 
+ * 目前是navigation组件6.0版本需要在
+ * 在这个文件android/app/src/main/java/<your package name>/MainActivity.java.添加
+ * 顶部：import android.os.Bundle;
+ * public class MainActivity extends ReactActivity {
+ * // ...
+ * @Override
+ * protected void onCreate(Bundle savedInstanceState) {
+ *  super.onCreate(null);
+ * }
+ // ...
+ * 
+}
+ * 
+ * 
+ * 添加导航容器
+ * 我们需要在入口文件中，把整个应用包裹在导航容器
+ * (NavigationContainer)中 (列如：在index.js或App.js文件中)
+ * 
+ * 
+ * stack导航
+ * BottomTab导航
+ * Drawer导航
+ * MaterialTopTab导航
+ * 
+ * 
+ */
