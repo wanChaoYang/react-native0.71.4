@@ -1,7 +1,7 @@
 //响应式布局
 import React from 'react';
-import {Text, View, StyleSheet,Dimensions} from 'react-native';
-const dimensions = (): JSX.Element => {
+import {Text, View, StyleSheet, Dimensions} from 'react-native';
+const DimensionsView = (): JSX.Element => {
   return (
     <View style={[styles.container]}>
       <View style={[styles.itemBase]}>
@@ -19,20 +19,20 @@ const dimensions = (): JSX.Element => {
     </View>
   );
 };
-export default dimensions;
+export default DimensionsView;
 const styles = StyleSheet.create({
   container: {
-    flexDirection:"row",
-    flexWrap:"wrap",//换行
+    flexDirection: 'row',
+    flexWrap: 'wrap', //换行
     // flexWrap:'wrap-reverse',//从上面换行
   },
   itemBase: {
-    justifyContent:"center",
-    alignItems:"center",
-    backgroundColor:"#00b38a",
-    width:Dimensions.get("window").width/3,
-    height:90,
-    borderWidth:1,
-    borderColor:"#000",
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#00b38a',
+    width: Dimensions.get('window').width / 3,
+    height: 90,
+    borderWidth: 1,
+    borderColor: '#000',
   },
 });

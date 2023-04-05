@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Button, Alert, StyleSheet} from 'react-native';
 
-export default function bottom() {
+export default function Index() {
   const createTwoButton = () => {
     Alert.alert('警告标题', '警告内容', [
       {
@@ -27,7 +27,7 @@ export default function bottom() {
         onPress: () => {
           console.log('destructive');
         },
-        style:"destructive",
+        style: 'destructive',
       },
       {
         text: '取消',

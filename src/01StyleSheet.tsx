@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 
-const styleSheet = (): JSX.Element => {
+const StyleSheetView = (): JSX.Element => {
   return (
     <View>
       <Text style={{fontSize: 30}}> Hello World </Text>
@@ -11,7 +11,7 @@ const styleSheet = (): JSX.Element => {
     </View>
   );
 };
-export default styleSheet;
+export default StyleSheetView;
 const styles = StyleSheet.create({
   h1: {
     fontSize: 40,
