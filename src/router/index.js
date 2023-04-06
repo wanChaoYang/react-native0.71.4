@@ -20,6 +20,7 @@ import BottomTab from '../22Navigation/2_BottomTab';
 import DrawerNavigator from '../22Navigation/3_DrawerNavigator';
 import MaterialTopTabNavigator from '../22Navigation/4_MaterialTopTabNavigator';
 import NestingNavigation from '../23NestingNavigation';
+import Swiper from "../16Swiper"
 const router = [
     {
         name: "StyleSheet",
@@ -100,5 +101,10 @@ const router = [
         name: "NestingNavigation",
         component: NestingNavigation,
     },
+    {
+        name: "Swiper",
+        component: Swiper,
+    },
+    
 ]
 export default router
