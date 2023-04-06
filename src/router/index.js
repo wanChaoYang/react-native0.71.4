@@ -21,6 +21,7 @@ import DrawerNavigator from '../22Navigation/3_DrawerNavigator';
 import MaterialTopTabNavigator from '../22Navigation/4_MaterialTopTabNavigator';
 import NestingNavigation from '../23NestingNavigation';
 import Swiper from "../16Swiper"
+import AyncStorage from "../17AyncStorage/AyncStorage"
 const router = [
     {
         name: "StyleSheet",
@@ -105,6 +106,11 @@ const router = [
         name: "Swiper",
         component: Swiper,
     },
-    
+    {
+        name: "AyncStorage",
+        component: AyncStorage,
+    },
+
+
 ]
 export default router
