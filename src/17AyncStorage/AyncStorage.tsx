@@ -46,7 +46,7 @@ const Index = () => {
     }
   };
   const clearAsyncStore = () => {
-    Storage.clear;
+    Storage.clear();
   };
   return (
     <ScrollView>

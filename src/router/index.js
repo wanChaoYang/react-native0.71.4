@@ -20,8 +20,9 @@ import BottomTab from '../22Navigation/2_BottomTab';
 import DrawerNavigator from '../22Navigation/3_DrawerNavigator';
 import MaterialTopTabNavigator from '../22Navigation/4_MaterialTopTabNavigator';
 import NestingNavigation from '../23NestingNavigation';
-import Swiper from "../16Swiper"
-import AyncStorage from "../17AyncStorage/AyncStorage"
+import Swiper from "../16Swiper";
+import AyncStorage from "../17AyncStorage/AyncStorage";
+import Geolocation from "../18Geolocation";
 const router = [
     {
         name: "StyleSheet",
@@ -110,7 +111,11 @@ const router = [
         name: "AyncStorage",
         component: AyncStorage,
     },
-
+    {
+        name: "Geolocation",
+        component: Geolocation,
+    },
+    
 
 ]
 export default router
