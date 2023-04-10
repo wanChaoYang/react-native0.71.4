@@ -23,6 +23,7 @@ import NestingNavigation from '../23NestingNavigation';
 import Swiper from "../16Swiper";
 import AyncStorage from "../17AyncStorage/AyncStorage";
 import Geolocation from "../18Geolocation";
+import Camera from "../19Camera";
 const router = [
     {
         name: "StyleSheet",
@@ -115,7 +116,9 @@ const router = [
         name: "Geolocation",
         component: Geolocation,
     },
-    
-
+    {
+        name: "Camera",
+        component: Camera,
+    },
 ]
 export default router
