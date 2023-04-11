@@ -28,15 +28,17 @@ import {View, Text, StyleSheet, ScrollView, Alert} from 'react-native';
 import Geolocation from '@react-native-community/geolocation';
 const Index = () => {
   useEffect(() => {
-    console.log('88');
     Geolocation.getCurrentPosition(
-      info => console.log(info),
+      info =>{
+        console.log(info)
+        Alert.alert("成功",JSON.stringify(info))
+      },
       error => {
         Alert.alert('报错', JSON.stringify(error))
       },
       {
-        timeout:20000,//允许超时20秒
-      }
+        timeout: 20000, //允许超时20秒
+      },
     );
   }, []);
   return (

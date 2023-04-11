@@ -40,7 +40,14 @@
  */
 
 import React, {useRef} from 'react';
-import {Alert, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {
+  Alert,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+  Button,
+} from 'react-native';
 import {RNCamera} from 'react-native-camera';
 
 const Index = () => {
@@ -50,7 +57,7 @@ const Index = () => {
       const options = {quality: 0.5, base64: true};
       const data = await camera.current.takePictureAsync(options);
       // console.log(data.uri);
-      Alert.alert(data.uri)
+      Alert.alert(data.uri);
     }
   };
 
