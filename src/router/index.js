@@ -24,6 +24,7 @@ import Swiper from "../16Swiper";
 import AyncStorage from "../17AyncStorage/AyncStorage";
 import Geolocation from "../18Geolocation";
 import Camera from "../19Camera";
+import ImagePicker from "../20ImagePicker";
 const router = [
     {
         name: "StyleSheet",
@@ -120,5 +121,10 @@ const router = [
         name: "Camera",
         component: Camera,
     },
+    {
+        name: "ImagePicker",
+        component: ImagePicker,
+    },
+
 ]
 export default router
